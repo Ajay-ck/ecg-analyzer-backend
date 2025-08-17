@@ -1,0 +1,24 @@
+# For the FastAPI application and general utilities
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+
+# For PDF and image processing
+PyMuPDF
+opencv-python-headless
+Pillow
+
+# For numerical and scientific computing
+numpy
+scipy
+pandas
+
+# For PDF generation
+fpdf2
+
+# For environment variable management (from helper.py)
+python-dotenv
+
+# For Google Generative AI (from helper.py)
+google-generativeai
