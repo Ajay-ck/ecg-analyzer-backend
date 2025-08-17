@@ -319,7 +319,7 @@ async def generate_report_endpoint(data: ReportData):
             pdf.cell(95, 8, str(item.parameter), border=1)
             pdf.cell(95, 8, str(item.value), border=1, ln=True)
 
-        pdf_output = pdf.output(dest='S').encode('latin-1')
+        pdf_output = pdf.output(dest='S')
 
         return StreamingResponse(
             io.BytesIO(pdf_output),
